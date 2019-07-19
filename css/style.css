@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: black;
+  letter-spacing: .03em;
+  outline: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: FredokaOne;
+  src: url(../font/FredokaOne.woff) format('woff');
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url(../font/Rubik.woff) format('woff');
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url(../font/Rubik-Bold.woff) format('woff');
+  font-weight: bold;
+}
+
+h1, h2, .header__logo-text, .footer__logo-text, .menu__item {
+  text-transform: uppercase;
+  font-family: FredokaOne;
+}
+
+h3 {
+  font-family: FredokaOne;
+}
+
+.article:first-child,
+.article:nth-child(2),
+.article:nth-child(5) {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.article:first-child {
+  background: url(../img/bg1.png) left no-repeat;
+  background-size: cover;
+  transition: 1s;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: .2em 5em;
+}
+
+.header__logo {
+  margin-top: 3.15em;
+  margin-right: 1.3em;
+  width: 240px;
+  height: 56px;
+  display: flex;
+}
+
+.header__logo-text {
+  font-size: 2rem;
+  margin: .2em 0 0 .7em;
+}
+
+.menu {
+  width: 55%;
+  margin-right: 3em;
+  margin-right: 1em;
+}
+
+.menu__items {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.3em;
+}
+
+.menu__item {
+  text-align: center;
+  margin-top: 2.2em;
+  font-size: 1.3rem;
+  list-style-type: none;
+}
+
+.menu__item-link {
+  color: white;
+  text-decoration: none;
+}
+
+.menu__item:hover::before {
+  content: "•";
+  position: absolute;
+  margin-top: .35em;
+  font-size: 2rem;
+}
+
+.menu__item:hover, .menu__item::before, .menu__item-link:hover {
+  color: #00e676;
+  transition: .4s;
+}
+
+.menu__button {
+  display: none;
+}
+
+.wrapper-header {
+  position: absolute;
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper__header {
+  font-size: 5.4rem;
+  letter-spacing: .033em;
+  margin-left: 2.5em;
+}
+
+.wrapper__header::before {
+  content: '';
+  position: absolute;
+  width: 180px;
+  height: 20px;
+  background-color: #00e676;
+  border-radius: 30px;
+  margin-top: 110px;
+}
+
+.article__link {
+  width: 100%;
+  display: block; 
+  position: absolute;
+  margin: auto;
+  top: 83vh;
+  display: flex;
+}
+
+.article__link-image {
+  margin: auto;
+}
+
+.article:nth-child(2) {
+  background: url(../img/map.png) no-repeat right;
+  background-size: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 40vw;
+  height: auto;
+  margin: auto 10em;
+}
+
