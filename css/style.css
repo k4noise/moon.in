@@ -155,3 +155,17 @@ h3 {
   margin: auto 10em;
 }
 
+.container__header {
+  font-size: 3rem;
+  letter-spacing: .03em;
+}
+
+.container__header::before {
+  content: "";
+  width: 90px; 
+  height: 1px;
+  position: absolute;
+  margin-top: 60px;
+  border-top: 7px dotted #00e676;
+}
+
