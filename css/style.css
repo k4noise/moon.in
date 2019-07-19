@@ -6,6 +6,7 @@ body {
   letter-spacing: .03em;
   outline: none;
   box-sizing: border-box;
+  line-height: 1.2;
 }
 
 @font-face {
@@ -155,17 +156,49 @@ h3 {
   margin: auto 10em;
 }
 
-.container__header {
+.container__header, .article__header {
   font-size: 3rem;
   letter-spacing: .03em;
 }
 
-.container__header::before {
+.container__header::before,
+.article__header::before {
   content: "";
   width: 90px; 
   height: 1px;
   position: absolute;
   margin-top: 60px;
   border-top: 7px dotted #00e676;
+}
+
+.container__text {
+  font-size: 1.5em;
+  font-family: Rubik;
+  margin-top: 1.5em;
+}
+
+/*TODO: укоротить код кнопки*/
+
+.container__button {
+  border-radius: 28px;
+  background-color: #00e676;
+  width: 194px;
+  height: 56px;
+  border: none;
+  font-family: Rubik;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin-top: 1em;
+  letter-spacing: .03em;
+}
+
+.container__button:hover {
+  background-color: black;
+  border: 2px solid #00e676;
+  color: #00e676;
+  transition: 1s;
+  box-shadow: 0 0 20px #00e676;
 }
 
