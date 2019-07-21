@@ -237,7 +237,7 @@ h3 {
   width: calc(100%/3);
   min-width: 400px;
   overflow: hidden;
-  margin-bottom: 5em;
+  margin-top: 2em;
 }
 
 .wrapper__item-image {
@@ -272,4 +272,25 @@ h3 {
 
 .wrapper__item:nth-child(3):hover .wrapper__item-image {
   background: url(../img/comp3_2_h.png) no-repeat center;
+}
+
+.article:nth-child(5) {
+  background: url(../img/bg2.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.article:nth-child(5) .wrapper {
+  margin: auto;
+}
+
+img[alt=arrow] {
+  margin-left: 6em;
+  position: relative;
+  top: .45em;
+}
+
+img[alt=pagination] {
+  margin-top: 3.2em;
 }
