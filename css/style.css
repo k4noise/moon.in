@@ -171,7 +171,8 @@ h3 {
   border-top: 7px dotted #00e676;
 }
 
-.container__text {
+.container__text,
+.item__text {
   font-size: 1.5em;
   font-family: Rubik;
   margin-top: 1.5em;
@@ -202,3 +203,27 @@ h3 {
   box-shadow: 0 0 20px #00e676;
 }
 
+.article__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 90%;
+  min-height: 75vh;
+  margin: auto;
+}
+
+.item__header {
+  font-size: 1.9rem;
+  letter-spacing: .05em;
+}
+
+.article__wrapper-item {
+  width: 20vw;
+  min-width: 20em;
+}
+
+.article__header {
+  margin-left: 3.33em;
+}
