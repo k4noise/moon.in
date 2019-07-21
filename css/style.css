@@ -157,7 +157,7 @@ h3 {
 }
 
 .container__header, .article__header {
-  font-size: 3rem;
+  font-size: 2.8rem;
   letter-spacing: .03em;
 }
 
@@ -167,7 +167,7 @@ h3 {
   width: 90px; 
   height: 1px;
   position: absolute;
-  margin-top: 60px;
+  margin-top: 57px;
   border-top: 7px dotted #00e676;
 }
 
@@ -177,8 +177,6 @@ h3 {
   font-family: Rubik;
   margin-top: 1.5em;
 }
-
-/*TODO: укоротить код кнопки*/
 
 .container__button {
   border-radius: 28px;
@@ -226,4 +224,52 @@ h3 {
 
 .article__header {
   margin-left: 3.33em;
+}
+
+.article:nth-child(4) .wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.wrapper__item {
+  width: calc(100%/3);
+  min-width: 400px;
+  overflow: hidden;
+  margin-bottom: 5em;
+}
+
+.wrapper__item-image {
+  width: 100%;
+  height: 100%;
+} 
+.wrapper__item-image:hover {
+  background-size: 12.7%;
+  transform: scale(1.2);
+  transition: .7s;
+}
+
+.wrapper__item:nth-child(1) .wrapper__item-image {
+  background: url(../img/comp1_2.png) no-repeat center;
+}
+
+.wrapper__item:nth-child(2) .wrapper__item-image {
+  background: url(../img/comp2_2.png) no-repeat center;
+}
+
+.wrapper__item:nth-child(3) .wrapper__item-image {
+  background: url(../img/comp2_2.png) no-repeat center;
+}
+
+.wrapper__item:nth-child(1):hover .wrapper__item-image {
+  background: url(../img/comp1_2_h.png) no-repeat center;
+}
+
+.wrapper__item:nth-child(2):hover .wrapper__item-image {
+  background: url(../img/comp2_2_h.png) no-repeat center;
+}
+
+.wrapper__item:nth-child(3):hover .wrapper__item-image {
+  background: url(../img/comp3_2_h.png) no-repeat center;
 }
