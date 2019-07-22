@@ -178,7 +178,7 @@ h3 {
   margin-top: 1.5em;
 }
 
-.container__button {
+.container__button, .wrapper__button {
   border-radius: 28px;
   background-color: #00e676;
   width: 194px;
@@ -193,7 +193,7 @@ h3 {
   letter-spacing: .03em;
 }
 
-.container__button:hover {
+.container__button:hover, .wrapper__button:hover {
   background-color: black;
   border: 2px solid #00e676;
   color: #00e676;
@@ -293,4 +293,51 @@ img[alt=arrow] {
 
 img[alt=pagination] {
   margin-top: 3.2em;
+}
+
+.article:nth-child(6) .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article:nth-child(6) .wrapper > .wrapper {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 1000px;
+}
+
+.article:nth-child(6) .container {
+  margin: auto;
+  text-align: center;
+}
+
+.article:nth-child(7) .wrapper {
+  margin-top: 9.3em;
+  height: 240px;
+  width: 100%;
+  background: #00e676 url(../img/map_sub.png) no-repeat top right;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.wrapper__button {
+  background-color: black;
+  color: #00e676;
+}
+
+.wrapper__button:hover {
+  background-color: transparent;
+  color: black;
+  transition: 1s;
+  box-shadow: 0 0 20px black;
+}
+
+.wrapper__text {
+  color: black;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: FredokaOne;
 }
