@@ -53,7 +53,7 @@ h3 {
   padding: .2em 5em;
 }
 
-.header__logo {
+.header__logo, .footer__logo {
   margin-top: 3.15em;
   margin-right: 1.3em;
   width: 240px;
@@ -61,7 +61,7 @@ h3 {
   display: flex;
 }
 
-.header__logo-text {
+.header__logo-text, .footer__logo-text {
   font-size: 2rem;
   margin: .2em 0 0 .7em;
 }
@@ -340,4 +340,33 @@ img[alt=pagination] {
   font-size: 3rem;
   text-transform: uppercase;
   font-family: FredokaOne;
+}
+
+.footer {
+  background-color: #131313;
+  height: 142px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 3.1em;
+  padding-top: .5em;
+  margin-bottom: -.5em;
+}
+
+.footer__logo {
+  margin: 0;
+}
+
+.footer__logo-text {
+  margin-top: .25em;
+}
+
+.footer__text {
+  font-size: 1.1rem;
+}
+
+.footer__text-green {
+  color: #00e676;
 }
